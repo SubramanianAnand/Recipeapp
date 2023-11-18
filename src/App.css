@@ -1,0 +1,20 @@
+*{
+   
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    display:block;
+  width:100%;
+  height:100vh;
+    background-image: url(https://eatatbento.com/wp-content/uploads/2022/04/Bento-Food-Light-Background.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+}
