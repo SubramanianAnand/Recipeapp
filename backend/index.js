@@ -19,7 +19,8 @@ app.use(express.json());
 app.use('/auth', userRouter)
 app.use('/recipe', recipeRouter)
 
-mongoose.createConnection(process.env.MONGO_URL)
+const source = process.env.MONGO_URL;
+mongoose.connect (source, {useNewUrlParser: true});
 
 app.listen(3001, ()=>{
     console.log("Server started")
