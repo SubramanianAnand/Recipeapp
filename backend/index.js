@@ -19,7 +19,7 @@ app.use(express.json());
 app.use('/auth', userRouter)
 app.use('/recipe', recipeRouter)
 
-const source = process.env.MONGO_URL;
+const source = 'mongodb://SubramanianAnand:Guvi123@ac-ubpuzmz-shard-00-00.6xg0syx.mongodb.net:27017,ac-ubpuzmz-shard-00-01.6xg0syx.mongodb.net:27017,ac-ubpuzmz-shard-00-02.6xg0syx.mongodb.net:27017/?ssl=true&replicaSet=atlas-a223se-shard-0&authSource=admin&retryWrites=true&w=majority';
 mongoose.connect (source, {useNewUrlParser: true, useUnifiedTopology: true });
 
 app.listen(3001, ()=>{
