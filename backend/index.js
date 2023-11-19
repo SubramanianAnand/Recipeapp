@@ -20,7 +20,7 @@ app.use('/auth', userRouter)
 app.use('/recipe', recipeRouter)
 
 const source = process.env.MONGO_URL;
-mongoose.connect (source, {useNewUrlParser: true});
+mongoose.connect (source, {useNewUrlParser: true, useUnifiedTopology: true });
 
 app.listen(3001, ()=>{
     console.log("Server started")
